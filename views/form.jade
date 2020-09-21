@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	form(method="POST" action="/new")
+		label(for="msg") Message
+		input(type="text" name="msg") 
+
+		label(for="usr") User
+		input(type="text" name="usr") 
+
+		input(type="submit" value="Submit")
